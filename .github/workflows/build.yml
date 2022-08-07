@@ -1,10 +1,10 @@
-name: AssetStudioBuild
+name: AssetStudio构建
 
 on:
   push:
-    branches: [ master ]
+    branches: [ CN ]
   pull_request:
-    branches: [ master ]
+    branches: [ CN ]
 
   workflow_dispatch:
 
@@ -16,7 +16,7 @@ jobs:
       - uses: actions/checkout@v2
       - uses: microsoft/setup-msbuild@v1.1
       
-      - name: Download FBX SDK
+      - name: 下载 FBX SDK
         run: |
           md fbx
           cd fbx
@@ -26,31 +26,31 @@ jobs:
           Start-Process -FilePath "fbxpdb.exe" /S -Wait
           cd ..
 
-      - name: Nuget Restore
+      - name: Nuget 还原
         run: nuget restore
       
-      - name: Build .Net472
+      - name: 构建 .Net472
         run: msbuild /p:Configuration=Release /p:TargetFramework=net472 /verbosity:minimal
 
-      - name: Build .Net5
+      - name: 构建 .Net5
         run: msbuild /t:AssetStudioGUI:publish /p:Configuration=Release /p:TargetFramework=net5.0-windows /p:SelfContained=false /verbosity:minimal
 
-      - name: Build .Net6
+      - name: 构建 .Net6
         run: msbuild /t:AssetStudioGUI:publish /p:Configuration=Release /p:TargetFramework=net6.0-windows /p:SelfContained=false /verbosity:minimal
 
-      - name: Upload .Net472 Artifact
+      - name: 上传 .Net472 Artifact
         uses: actions/upload-artifact@v2
         with:
           name: AssetStudio.net472
           path: AssetStudioGUI/bin/Release/net472
 
-      - name: Upload .Net5 Artifact
+      - name: 上传 .Net5 Artifact
         uses: actions/upload-artifact@v2
         with:
           name: AssetStudio.net5
           path: AssetStudioGUI/bin/Release/net5.0-windows/publish
 
-      - name: Upload .Net6 Artifact
+      - name: 上传 .Net6 Artifact
         uses: actions/upload-artifact@v2
         with:
           name: AssetStudio.net6
