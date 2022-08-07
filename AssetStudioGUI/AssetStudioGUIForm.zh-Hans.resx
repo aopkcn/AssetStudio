@@ -204,5 +204,11 @@
   </data>
   <data name="languageToolStripMenuItem.Text" xml:space="preserve">
     <value>语言</value>
+  <data name="exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>284, 22</value>
+  </data>
+  </data>
+    <data name="exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Text" xml:space="preserve">
+    <value>动态+动态片段</value>
   </data>
 </root>
