@@ -31,6 +31,11 @@ namespace AssetStudioGUI
     {
         XML
     }
+    internal enum LanguageType
+    {
+        English,
+        Chinese
+    }
 
     internal static class Studio
     {
