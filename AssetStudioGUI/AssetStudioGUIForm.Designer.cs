@@ -1,4 +1,4 @@
-﻿namespace AssetStudioGUI
+namespace AssetStudioGUI
 {
     partial class AssetStudioGUIForm
     {
@@ -172,20 +172,20 @@
             this.extractFolderToolStripMenuItem});
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(39, 21);
-            this.fileToolStripMenuItem.Text = "File";
+            this.fileToolStripMenuItem.Text = "文件";
             // 
             // loadFileToolStripMenuItem
             // 
             this.loadFileToolStripMenuItem.Name = "loadFileToolStripMenuItem";
             this.loadFileToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.loadFileToolStripMenuItem.Text = "Load file";
+            this.loadFileToolStripMenuItem.Text = "加载文件";
             this.loadFileToolStripMenuItem.Click += new System.EventHandler(this.loadFile_Click);
             // 
             // loadFolderToolStripMenuItem
             // 
             this.loadFolderToolStripMenuItem.Name = "loadFolderToolStripMenuItem";
             this.loadFolderToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.loadFolderToolStripMenuItem.Text = "Load folder";
+            this.loadFolderToolStripMenuItem.Text = "加载文件夹";
             this.loadFolderToolStripMenuItem.Click += new System.EventHandler(this.loadFolder_Click);
             // 
             // toolStripMenuItem1
@@ -197,14 +197,14 @@
             // 
             this.extractFileToolStripMenuItem.Name = "extractFileToolStripMenuItem";
             this.extractFileToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.extractFileToolStripMenuItem.Text = "Extract file";
+            this.extractFileToolStripMenuItem.Text = "提取文件";
             this.extractFileToolStripMenuItem.Click += new System.EventHandler(this.extractFileToolStripMenuItem_Click);
             // 
             // extractFolderToolStripMenuItem
             // 
             this.extractFolderToolStripMenuItem.Name = "extractFolderToolStripMenuItem";
             this.extractFolderToolStripMenuItem.Size = new System.Drawing.Size(154, 22);
-            this.extractFolderToolStripMenuItem.Text = "Extract folder";
+            this.extractFolderToolStripMenuItem.Text = "提取文件夹";
             this.extractFolderToolStripMenuItem.Click += new System.EventHandler(this.extractFolderToolStripMenuItem_Click);
             // 
             // optionsToolStripMenuItem
@@ -217,16 +217,15 @@
             this.showExpOpt});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
             this.optionsToolStripMenuItem.Size = new System.Drawing.Size(66, 21);
-            this.optionsToolStripMenuItem.Text = "Options";
+            this.optionsToolStripMenuItem.Text = "选项";
             // 
             // displayAll
             // 
             this.displayAll.CheckOnClick = true;
             this.displayAll.Name = "displayAll";
             this.displayAll.Size = new System.Drawing.Size(223, 22);
-            this.displayAll.Text = "Display all assets";
-            this.displayAll.ToolTipText = "Check this option will display all types assets. Not extractable assets can expor" +
-    "t the RAW file.";
+            this.displayAll.Text = "显示所有资源";
+            this.displayAll.ToolTipText = "选中此选项将显示所有类型的资源。不可提取的资源可以导出RAW文件.";
             this.displayAll.CheckedChanged += new System.EventHandler(this.displayAll_CheckedChanged);
             // 
             // enablePreview
@@ -236,9 +235,8 @@
             this.enablePreview.CheckState = System.Windows.Forms.CheckState.Checked;
             this.enablePreview.Name = "enablePreview";
             this.enablePreview.Size = new System.Drawing.Size(223, 22);
-            this.enablePreview.Text = "Enable preview";
-            this.enablePreview.ToolTipText = "Toggle the loading and preview of readable assets, such as images, sounds, text, " +
-    "etc.\r\nDisable preview if you have performance or compatibility issues.";
+            this.enablePreview.Text = "启用预览";
+            this.enablePreview.ToolTipText = "切换可读资源（如图像、声音、文本）的加载和预览, etc.\r\n如果存在性能或兼容性问题，请禁用预览.";
             this.enablePreview.CheckedChanged += new System.EventHandler(this.enablePreview_Check);
             // 
             // displayInfo
@@ -248,9 +246,8 @@
             this.displayInfo.CheckState = System.Windows.Forms.CheckState.Checked;
             this.displayInfo.Name = "displayInfo";
             this.displayInfo.Size = new System.Drawing.Size(223, 22);
-            this.displayInfo.Text = "Display asset infromation";
-            this.displayInfo.ToolTipText = "Toggle the overlay that shows information about each asset, eg. image size, forma" +
-    "t, audio bitrate, etc.";
+            this.displayInfo.Text = "显示资源信息";
+            this.displayInfo.ToolTipText = "切换显示每个资源信息的覆盖层，例如图像大小、格式、音频比特率等.";
             this.displayInfo.CheckedChanged += new System.EventHandler(this.displayAssetInfo_Check);
             // 
             // toolStripMenuItem14
@@ -259,7 +256,7 @@
             this.specifyUnityVersion});
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
             this.toolStripMenuItem14.Size = new System.Drawing.Size(223, 22);
-            this.toolStripMenuItem14.Text = "Specify Unity version";
+            this.toolStripMenuItem14.Text = "指定 Unity 版本";
             // 
             // specifyUnityVersion
             // 
@@ -271,7 +268,7 @@
             // 
             this.showExpOpt.Name = "showExpOpt";
             this.showExpOpt.Size = new System.Drawing.Size(223, 22);
-            this.showExpOpt.Text = "Export options";
+            this.showExpOpt.Text = "导出选项";
             this.showExpOpt.Click += new System.EventHandler(this.showExpOpt_Click);
             // 
             // modelToolStripMenuItem
@@ -285,27 +282,27 @@
             this.exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem});
             this.modelToolStripMenuItem.Name = "modelToolStripMenuItem";
             this.modelToolStripMenuItem.Size = new System.Drawing.Size(58, 21);
-            this.modelToolStripMenuItem.Text = "Model";
+            this.modelToolStripMenuItem.Text = "模型";
             // 
             // exportAllObjectssplitToolStripMenuItem1
             // 
             this.exportAllObjectssplitToolStripMenuItem1.Name = "exportAllObjectssplitToolStripMenuItem1";
             this.exportAllObjectssplitToolStripMenuItem1.Size = new System.Drawing.Size(417, 22);
-            this.exportAllObjectssplitToolStripMenuItem1.Text = "Export all objects (split)";
+            this.exportAllObjectssplitToolStripMenuItem1.Text = "导出所有对象（拆分）";
             this.exportAllObjectssplitToolStripMenuItem1.Click += new System.EventHandler(this.exportAllObjectssplitToolStripMenuItem1_Click);
             // 
             // exportSelectedObjectsToolStripMenuItem
             // 
             this.exportSelectedObjectsToolStripMenuItem.Name = "exportSelectedObjectsToolStripMenuItem";
             this.exportSelectedObjectsToolStripMenuItem.Size = new System.Drawing.Size(417, 22);
-            this.exportSelectedObjectsToolStripMenuItem.Text = "Export selected objects (split)";
+            this.exportSelectedObjectsToolStripMenuItem.Text = "导出选定对象（拆分）";
             this.exportSelectedObjectsToolStripMenuItem.Click += new System.EventHandler(this.exportSelectedObjectsToolStripMenuItem_Click);
             // 
             // exportSelectedObjectsWithAnimationClipToolStripMenuItem
             // 
             this.exportSelectedObjectsWithAnimationClipToolStripMenuItem.Name = "exportSelectedObjectsWithAnimationClipToolStripMenuItem";
             this.exportSelectedObjectsWithAnimationClipToolStripMenuItem.Size = new System.Drawing.Size(417, 22);
-            this.exportSelectedObjectsWithAnimationClipToolStripMenuItem.Text = "Export selected objects (split) + selected AnimationClips";
+            this.exportSelectedObjectsWithAnimationClipToolStripMenuItem.Text = "导出选定对象（拆分）+ 选定的动画片段";
             this.exportSelectedObjectsWithAnimationClipToolStripMenuItem.Click += new System.EventHandler(this.exportObjectswithAnimationClipMenuItem_Click);
             // 
             // toolStripSeparator1
@@ -317,14 +314,14 @@
             // 
             this.exportSelectedObjectsmergeToolStripMenuItem.Name = "exportSelectedObjectsmergeToolStripMenuItem";
             this.exportSelectedObjectsmergeToolStripMenuItem.Size = new System.Drawing.Size(417, 22);
-            this.exportSelectedObjectsmergeToolStripMenuItem.Text = "Export selected objects (merge)";
+            this.exportSelectedObjectsmergeToolStripMenuItem.Text = "导出选定对象（合并）";
             this.exportSelectedObjectsmergeToolStripMenuItem.Click += new System.EventHandler(this.exportSelectedObjectsmergeToolStripMenuItem_Click);
             // 
             // exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem
             // 
             this.exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem.Name = "exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem";
             this.exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem.Size = new System.Drawing.Size(417, 22);
-            this.exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem.Text = "Export selected objects (merge) + selected AnimationClips";
+            this.exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem.Text = "导出选定对象（合并）+ 选定的动画片段";
             this.exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem.Click += new System.EventHandler(this.exportSelectedObjectsmergeWithAnimationClipToolStripMenuItem_Click);
             // 
             // exportToolStripMenuItem
@@ -342,27 +339,27 @@
             this.toolStripMenuItem10});
             this.exportToolStripMenuItem.Name = "exportToolStripMenuItem";
             this.exportToolStripMenuItem.Size = new System.Drawing.Size(58, 21);
-            this.exportToolStripMenuItem.Text = "Export";
+            this.exportToolStripMenuItem.Text = "导出";
             // 
             // exportAllAssetsMenuItem
             // 
             this.exportAllAssetsMenuItem.Name = "exportAllAssetsMenuItem";
             this.exportAllAssetsMenuItem.Size = new System.Drawing.Size(284, 22);
-            this.exportAllAssetsMenuItem.Text = "All assets";
+            this.exportAllAssetsMenuItem.Text = "所有资源";
             this.exportAllAssetsMenuItem.Click += new System.EventHandler(this.exportAllAssetsMenuItem_Click);
             // 
             // exportSelectedAssetsMenuItem
             // 
             this.exportSelectedAssetsMenuItem.Name = "exportSelectedAssetsMenuItem";
             this.exportSelectedAssetsMenuItem.Size = new System.Drawing.Size(284, 22);
-            this.exportSelectedAssetsMenuItem.Text = "Selected assets";
+            this.exportSelectedAssetsMenuItem.Text = "选定资源";
             this.exportSelectedAssetsMenuItem.Click += new System.EventHandler(this.exportSelectedAssetsMenuItem_Click);
             // 
             // exportFilteredAssetsMenuItem
             // 
             this.exportFilteredAssetsMenuItem.Name = "exportFilteredAssetsMenuItem";
             this.exportFilteredAssetsMenuItem.Size = new System.Drawing.Size(284, 22);
-            this.exportFilteredAssetsMenuItem.Text = "Filtered assets";
+            this.exportFilteredAssetsMenuItem.Text = "过滤资源";
             this.exportFilteredAssetsMenuItem.Click += new System.EventHandler(this.exportFilteredAssetsMenuItem_Click);
             // 
             // toolStripSeparator3
@@ -374,7 +371,7 @@
             // 
             this.exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Name = "exportAnimatorWithSelectedAnimationClipToolStripMenuItem";
             this.exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Size = new System.Drawing.Size(284, 22);
-            this.exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Text = "Animator + selected AnimationClips";
+            this.exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Text = "动画控制器 + 选定的动画片段";
             this.exportAnimatorWithSelectedAnimationClipToolStripMenuItem.Click += new System.EventHandler(this.exportAnimatorwithAnimationClipMenuItem_Click);
             // 
             // toolStripSeparator4
@@ -390,27 +387,27 @@
             this.toolStripMenuItem6});
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Size = new System.Drawing.Size(284, 22);
-            this.toolStripMenuItem2.Text = "Raw";
+            this.toolStripMenuItem2.Text = "原始资源";
             // 
             // toolStripMenuItem4
             // 
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Size = new System.Drawing.Size(165, 22);
-            this.toolStripMenuItem4.Text = "All assets";
+            this.toolStripMenuItem4.Text = "所有资源";
             this.toolStripMenuItem4.Click += new System.EventHandler(this.toolStripMenuItem4_Click);
             // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Size = new System.Drawing.Size(165, 22);
-            this.toolStripMenuItem5.Text = "Selected assets";
+            this.toolStripMenuItem5.Text = "选定资源";
             this.toolStripMenuItem5.Click += new System.EventHandler(this.toolStripMenuItem5_Click);
             // 
             // toolStripMenuItem6
             // 
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Size = new System.Drawing.Size(165, 22);
-            this.toolStripMenuItem6.Text = "Filtered assets";
+            this.toolStripMenuItem6.Text = "过滤资源";
             this.toolStripMenuItem6.Click += new System.EventHandler(this.toolStripMenuItem6_Click);
             // 
             // toolStripMenuItem3
@@ -421,27 +418,27 @@
             this.toolStripMenuItem9});
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Size = new System.Drawing.Size(284, 22);
-            this.toolStripMenuItem3.Text = "Dump";
+            this.toolStripMenuItem3.Text = "转储资源";
             // 
             // toolStripMenuItem7
             // 
             this.toolStripMenuItem7.Name = "toolStripMenuItem7";
             this.toolStripMenuItem7.Size = new System.Drawing.Size(165, 22);
-            this.toolStripMenuItem7.Text = "All assets";
+            this.toolStripMenuItem7.Text = "所有资源";
             this.toolStripMenuItem7.Click += new System.EventHandler(this.toolStripMenuItem7_Click);
             // 
             // toolStripMenuItem8
             // 
             this.toolStripMenuItem8.Name = "toolStripMenuItem8";
             this.toolStripMenuItem8.Size = new System.Drawing.Size(165, 22);
-            this.toolStripMenuItem8.Text = "Selected assets";
+            this.toolStripMenuItem8.Text = "选定资源";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.toolStripMenuItem8_Click);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
             this.toolStripMenuItem9.Size = new System.Drawing.Size(165, 22);
-            this.toolStripMenuItem9.Text = "Filtered assets";
+            this.toolStripMenuItem9.Text = "过滤资源";
             this.toolStripMenuItem9.Click += new System.EventHandler(this.toolStripMenuItem9_Click);
             // 
             // toolStripSeparator2
@@ -457,27 +454,27 @@
             this.toolStripMenuItem13});
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
             this.toolStripMenuItem10.Size = new System.Drawing.Size(284, 22);
-            this.toolStripMenuItem10.Text = "Asset list to XML";
+            this.toolStripMenuItem10.Text = "资源列表导出为 XML";
             // 
             // toolStripMenuItem11
             // 
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
             this.toolStripMenuItem11.Size = new System.Drawing.Size(165, 22);
-            this.toolStripMenuItem11.Text = "All assets";
+            this.toolStripMenuItem11.Text = "所有资源";
             this.toolStripMenuItem11.Click += new System.EventHandler(this.toolStripMenuItem11_Click);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
             this.toolStripMenuItem12.Size = new System.Drawing.Size(165, 22);
-            this.toolStripMenuItem12.Text = "Selected assets";
+            this.toolStripMenuItem12.Text = "选定资源";
             this.toolStripMenuItem12.Click += new System.EventHandler(this.toolStripMenuItem12_Click);
             // 
             // toolStripMenuItem13
             // 
             this.toolStripMenuItem13.Name = "toolStripMenuItem13";
             this.toolStripMenuItem13.Size = new System.Drawing.Size(165, 22);
-            this.toolStripMenuItem13.Text = "Filtered assets";
+            this.toolStripMenuItem13.Text = "过滤资源";
             this.toolStripMenuItem13.Click += new System.EventHandler(this.toolStripMenuItem13_Click);
             // 
             // filterTypeToolStripMenuItem
@@ -486,7 +483,7 @@
             this.allToolStripMenuItem});
             this.filterTypeToolStripMenuItem.Name = "filterTypeToolStripMenuItem";
             this.filterTypeToolStripMenuItem.Size = new System.Drawing.Size(80, 21);
-            this.filterTypeToolStripMenuItem.Text = "Filter Type";
+            this.filterTypeToolStripMenuItem.Text = "过滤类型";
             // 
             // allToolStripMenuItem
             // 
@@ -495,7 +492,7 @@
             this.allToolStripMenuItem.CheckState = System.Windows.Forms.CheckState.Checked;
             this.allToolStripMenuItem.Name = "allToolStripMenuItem";
             this.allToolStripMenuItem.Size = new System.Drawing.Size(90, 22);
-            this.allToolStripMenuItem.Text = "All";
+            this.allToolStripMenuItem.Text = "所有";
             this.allToolStripMenuItem.Click += new System.EventHandler(this.typeToolStripMenuItem_Click);
             // 
             // debugMenuItem
@@ -505,7 +502,7 @@
             this.exportClassStructuresMenuItem});
             this.debugMenuItem.Name = "debugMenuItem";
             this.debugMenuItem.Size = new System.Drawing.Size(59, 21);
-            this.debugMenuItem.Text = "Debug";
+            this.debugMenuItem.Text = "调试";
             // 
             // toolStripMenuItem15
             // 
@@ -514,14 +511,14 @@
             this.toolStripMenuItem15.CheckState = System.Windows.Forms.CheckState.Checked;
             this.toolStripMenuItem15.Name = "toolStripMenuItem15";
             this.toolStripMenuItem15.Size = new System.Drawing.Size(207, 22);
-            this.toolStripMenuItem15.Text = "Show error message";
+            this.toolStripMenuItem15.Text = "显示错误信息";
             this.toolStripMenuItem15.Click += new System.EventHandler(this.toolStripMenuItem15_Click);
             // 
             // exportClassStructuresMenuItem
             // 
             this.exportClassStructuresMenuItem.Name = "exportClassStructuresMenuItem";
             this.exportClassStructuresMenuItem.Size = new System.Drawing.Size(207, 22);
-            this.exportClassStructuresMenuItem.Text = "Export class structures";
+            this.exportClassStructuresMenuItem.Text = "导出类结构";
             this.exportClassStructuresMenuItem.Click += new System.EventHandler(this.exportClassStructuresMenuItem_Click);
             // 
             // splitContainer1
@@ -570,7 +567,7 @@
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Size = new System.Drawing.Size(472, 608);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "Scene Hierarchy";
+            this.tabPage1.Text = "场景层级";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // sceneTreeView
@@ -592,7 +589,7 @@
             this.treeSearch.Name = "treeSearch";
             this.treeSearch.Size = new System.Drawing.Size(472, 21);
             this.treeSearch.TabIndex = 0;
-            this.treeSearch.Text = " Search ";
+            this.treeSearch.Text = " 搜索 ";
             this.treeSearch.TextChanged += new System.EventHandler(this.treeSearch_TextChanged);
             this.treeSearch.Enter += new System.EventHandler(this.treeSearch_Enter);
             this.treeSearch.KeyDown += new System.Windows.Forms.KeyEventHandler(this.treeSearch_KeyDown);
@@ -606,7 +603,7 @@
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(472, 608);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "Asset List";
+            this.tabPage2.Text = "资源列表";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // assetListView
@@ -635,26 +632,26 @@
             // 
             // columnHeaderName
             // 
-            this.columnHeaderName.Text = "Name";
+            this.columnHeaderName.Text = "名称";
             this.columnHeaderName.Width = 170;
             // 
             // columnHeaderContainer
             // 
-            this.columnHeaderContainer.Text = "Container";
+            this.columnHeaderContainer.Text = "容器";
             this.columnHeaderContainer.Width = 80;
             // 
             // columnHeaderType
             // 
-            this.columnHeaderType.Text = "Type";
+            this.columnHeaderType.Text = "类型";
             this.columnHeaderType.Width = 90;
             // 
             // columnHeaderPathID
             // 
-            this.columnHeaderPathID.Text = "PathID";
+            this.columnHeaderPathID.Text = "路径ID";
             // 
             // columnHeaderSize
             // 
-            this.columnHeaderSize.Text = "Size";
+            this.columnHeaderSize.Text = "大小";
             this.columnHeaderSize.Width = 50;
             // 
             // listSearch
@@ -665,7 +662,7 @@
             this.listSearch.Name = "listSearch";
             this.listSearch.Size = new System.Drawing.Size(472, 21);
             this.listSearch.TabIndex = 0;
-            this.listSearch.Text = " Filter ";
+            this.listSearch.Text = " 过滤 ";
             this.listSearch.TextChanged += new System.EventHandler(this.ListSearchTextChanged);
             this.listSearch.Enter += new System.EventHandler(this.listSearch_Enter);
             this.listSearch.Leave += new System.EventHandler(this.listSearch_Leave);
@@ -677,7 +674,7 @@
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(472, 608);
             this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "Asset Classes";
+            this.tabPage3.Text = "资源类别";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // classesListView
@@ -700,7 +697,7 @@
             // columnHeader1
             // 
             this.columnHeader1.DisplayIndex = 1;
-            this.columnHeader1.Text = "Name";
+            this.columnHeader1.Text = "名称";
             this.columnHeader1.Width = 300;
             // 
             // columnHeader2
@@ -747,7 +744,7 @@
             this.tabPage4.Name = "tabPage4";
             this.tabPage4.Size = new System.Drawing.Size(768, 606);
             this.tabPage4.TabIndex = 0;
-            this.tabPage4.Text = "Preview";
+            this.tabPage4.Text = "预览";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
             // previewPanel
@@ -806,7 +803,7 @@
             this.FMODcopyright.Name = "FMODcopyright";
             this.FMODcopyright.Size = new System.Drawing.Size(341, 12);
             this.FMODcopyright.TabIndex = 9;
-            this.FMODcopyright.Text = "Audio Engine supplied by FMOD by Firelight Technologies.";
+            this.FMODcopyright.Text = "音频引擎由 Firelight Technologies 的 FMOD 提供.";
             // 
             // FMODinfoLabel
             // 
@@ -835,7 +832,7 @@
             this.FMODstatusLabel.Name = "FMODstatusLabel";
             this.FMODstatusLabel.Size = new System.Drawing.Size(47, 12);
             this.FMODstatusLabel.TabIndex = 6;
-            this.FMODstatusLabel.Text = "Stopped";
+            this.FMODstatusLabel.Text = "停止";
             // 
             // FMODprogressBar
             // 
@@ -868,7 +865,7 @@
             this.FMODloopButton.Name = "FMODloopButton";
             this.FMODloopButton.Size = new System.Drawing.Size(55, 42);
             this.FMODloopButton.TabIndex = 3;
-            this.FMODloopButton.Text = "Loop";
+            this.FMODloopButton.Text = "循环";
             this.FMODloopButton.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.FMODloopButton.UseVisualStyleBackColor = true;
             this.FMODloopButton.CheckedChanged += new System.EventHandler(this.FMODloopButton_CheckedChanged);
@@ -879,7 +876,7 @@
             this.FMODstopButton.Name = "FMODstopButton";
             this.FMODstopButton.Size = new System.Drawing.Size(55, 42);
             this.FMODstopButton.TabIndex = 2;
-            this.FMODstopButton.Text = "Stop";
+            this.FMODstopButton.Text = "停止";
             this.FMODstopButton.UseVisualStyleBackColor = true;
             this.FMODstopButton.Click += new System.EventHandler(this.FMODstopButton_Click);
             // 
@@ -889,7 +886,7 @@
             this.FMODpauseButton.Name = "FMODpauseButton";
             this.FMODpauseButton.Size = new System.Drawing.Size(55, 42);
             this.FMODpauseButton.TabIndex = 1;
-            this.FMODpauseButton.Text = "Pause";
+            this.FMODpauseButton.Text = "暂停";
             this.FMODpauseButton.UseVisualStyleBackColor = true;
             this.FMODpauseButton.Click += new System.EventHandler(this.FMODpauseButton_Click);
             // 
@@ -899,7 +896,7 @@
             this.FMODplayButton.Name = "FMODplayButton";
             this.FMODplayButton.Size = new System.Drawing.Size(55, 42);
             this.FMODplayButton.TabIndex = 0;
-            this.FMODplayButton.Text = "Play";
+            this.FMODplayButton.Text = "播放";
             this.FMODplayButton.UseVisualStyleBackColor = true;
             this.FMODplayButton.Click += new System.EventHandler(this.FMODplayButton_Click);
             // 
@@ -967,7 +964,7 @@
             this.tabPage5.Name = "tabPage5";
             this.tabPage5.Size = new System.Drawing.Size(768, 606);
             this.tabPage5.TabIndex = 1;
-            this.tabPage5.Text = "Dump";
+            this.tabPage5.Text = "转储";
             this.tabPage5.UseVisualStyleBackColor = true;
             // 
             // dumpTextBox
@@ -990,7 +987,7 @@
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(776, 22);
             this.statusStrip1.TabIndex = 2;
-            this.statusStrip1.Text = "statusStrip1";
+            this.statusStrip1.Text = "状态栏1";
             // 
             // toolStripStatusLabel1
             // 
@@ -998,7 +995,7 @@
             this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
             this.toolStripStatusLabel1.Size = new System.Drawing.Size(761, 17);
             this.toolStripStatusLabel1.Spring = true;
-            this.toolStripStatusLabel1.Text = "Ready to go";
+            this.toolStripStatusLabel1.Text = "准备就绪";
             this.toolStripStatusLabel1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // timer
@@ -1009,7 +1006,7 @@
             // openFileDialog1
             // 
             this.openFileDialog1.AddExtension = false;
-            this.openFileDialog1.Filter = "All types|*.*";
+            this.openFileDialog1.Filter = "所有类型|*.*";
             this.openFileDialog1.Multiselect = true;
             this.openFileDialog1.RestoreDirectory = true;
             // 
@@ -1029,21 +1026,21 @@
             // 
             this.copyToolStripMenuItem.Name = "copyToolStripMenuItem";
             this.copyToolStripMenuItem.Size = new System.Drawing.Size(326, 22);
-            this.copyToolStripMenuItem.Text = "Copy text";
+            this.copyToolStripMenuItem.Text = "复制文本";
             this.copyToolStripMenuItem.Click += new System.EventHandler(this.copyToolStripMenuItem_Click);
             // 
             // exportSelectedAssetsToolStripMenuItem
             // 
             this.exportSelectedAssetsToolStripMenuItem.Name = "exportSelectedAssetsToolStripMenuItem";
             this.exportSelectedAssetsToolStripMenuItem.Size = new System.Drawing.Size(326, 22);
-            this.exportSelectedAssetsToolStripMenuItem.Text = "Export selected assets";
+            this.exportSelectedAssetsToolStripMenuItem.Text = "导出选定的资源";
             this.exportSelectedAssetsToolStripMenuItem.Click += new System.EventHandler(this.exportSelectedAssetsToolStripMenuItem_Click);
             // 
             // exportAnimatorwithselectedAnimationClipMenuItem
             // 
             this.exportAnimatorwithselectedAnimationClipMenuItem.Name = "exportAnimatorwithselectedAnimationClipMenuItem";
             this.exportAnimatorwithselectedAnimationClipMenuItem.Size = new System.Drawing.Size(326, 22);
-            this.exportAnimatorwithselectedAnimationClipMenuItem.Text = "Export Animator + selected AnimationClips";
+            this.exportAnimatorwithselectedAnimationClipMenuItem.Text = "导出动画控制器 + 选定的动画片段";
             this.exportAnimatorwithselectedAnimationClipMenuItem.Visible = false;
             this.exportAnimatorwithselectedAnimationClipMenuItem.Click += new System.EventHandler(this.exportAnimatorwithAnimationClipMenuItem_Click);
             // 
@@ -1051,7 +1048,7 @@
             // 
             this.goToSceneHierarchyToolStripMenuItem.Name = "goToSceneHierarchyToolStripMenuItem";
             this.goToSceneHierarchyToolStripMenuItem.Size = new System.Drawing.Size(326, 22);
-            this.goToSceneHierarchyToolStripMenuItem.Text = "Go to scene hierarchy";
+            this.goToSceneHierarchyToolStripMenuItem.Text = "转到场景层级";
             this.goToSceneHierarchyToolStripMenuItem.Visible = false;
             this.goToSceneHierarchyToolStripMenuItem.Click += new System.EventHandler(this.goToSceneHierarchyToolStripMenuItem_Click);
             // 
@@ -1059,7 +1056,7 @@
             // 
             this.showOriginalFileToolStripMenuItem.Name = "showOriginalFileToolStripMenuItem";
             this.showOriginalFileToolStripMenuItem.Size = new System.Drawing.Size(326, 22);
-            this.showOriginalFileToolStripMenuItem.Text = "Show original file";
+            this.showOriginalFileToolStripMenuItem.Text = "显示原始文件";
             this.showOriginalFileToolStripMenuItem.Visible = false;
             this.showOriginalFileToolStripMenuItem.Click += new System.EventHandler(this.showOriginalFileToolStripMenuItem_Click);
             // 

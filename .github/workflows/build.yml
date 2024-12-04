@@ -2,9 +2,9 @@ name: AssetStudioBuild
 
 on:
   push:
-    branches: [ master ]
+    branches: [ Chinese ]
   pull_request:
-    branches: [ master ]
+    branches: [ Chinese ]
 
   workflow_dispatch:
 

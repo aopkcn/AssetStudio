@@ -97,7 +97,7 @@ namespace AssetStudio
         {
             if (!assetsFileListHash.Contains(reader.FileName))
             {
-                Logger.Info($"Loading {reader.FullPath}");
+                Logger.Info($"正在加载 {reader.FullPath}");
                 try
                 {
                     var assetsFile = new SerializedFile(reader, this);
@@ -137,13 +137,13 @@ namespace AssetStudio
                 }
                 catch (Exception e)
                 {
-                    Logger.Error($"Error while reading assets file {reader.FullPath}", e);
+                    Logger.Error($"读取资源文件 {reader.FullPath}", e);
                     reader.Dispose();
                 }
             }
             else
             {
-                Logger.Info($"Skipping {reader.FullPath}");
+                Logger.Info($"跳过 {reader.FullPath}");
                 reader.Dispose();
             }
         }
@@ -166,17 +166,17 @@ namespace AssetStudio
                 }
                 catch (Exception e)
                 {
-                    Logger.Error($"Error while reading assets file {reader.FullPath} from {Path.GetFileName(originalPath)}", e);
+                    Logger.Error($"读取资源文件 {reader.FullPath} 时出错，来源：{Path.GetFileName(originalPath)}", e);
                     resourceFileReaders.Add(reader.FileName, reader);
                 }
             }
             else
-                Logger.Info($"Skipping {originalPath} ({reader.FileName})");
+                Logger.Info($"跳过 {originalPath} ({reader.FileName})");
         }
 
         private void LoadBundleFile(FileReader reader, string originalPath = null)
         {
-            Logger.Info("Loading " + reader.FullPath);
+            Logger.Info("正在加载 " + reader.FullPath);
             try
             {
                 var bundleFile = new BundleFile(reader);
@@ -196,10 +196,10 @@ namespace AssetStudio
             }
             catch (Exception e)
             {
-                var str = $"Error while reading bundle file {reader.FullPath}";
+                var str = $"读取包文件 {reader.FullPath} 时出错";
                 if (originalPath != null)
                 {
-                    str += $" from {Path.GetFileName(originalPath)}";
+                    str += $" 来源 {Path.GetFileName(originalPath)}";
                 }
                 Logger.Error(str, e);
             }
@@ -211,7 +211,7 @@ namespace AssetStudio
 
         private void LoadWebFile(FileReader reader)
         {
-            Logger.Info("Loading " + reader.FullPath);
+            Logger.Info("正在加载 " + reader.FullPath);
             try
             {
                 var webFile = new WebFile(reader);
@@ -238,7 +238,7 @@ namespace AssetStudio
             }
             catch (Exception e)
             {
-                Logger.Error($"Error while reading web file {reader.FullPath}", e);
+                Logger.Error($"读取网页文件 {reader.FullPath} 时出错", e);
             }
             finally
             {
@@ -248,7 +248,7 @@ namespace AssetStudio
 
         private void LoadZipFile(FileReader reader)
         {
-            Logger.Info("Loading " + reader.FileName);
+            Logger.Info("正在加载 " + reader.FileName);
             try
             {
                 using (ZipArchive archive = new ZipArchive(reader.BaseStream, ZipArchiveMode.Read))
@@ -298,7 +298,7 @@ namespace AssetStudio
                         }
                         catch (Exception e)
                         {
-                            Logger.Error($"Error while reading zip split file {basePath}", e);
+                            Logger.Error($"读取 ZIP 拆分文件 {basePath} 时出错", e);
                         }
                     }
 
@@ -378,7 +378,7 @@ namespace AssetStudio
 
         private void ReadAssets()
         {
-            Logger.Info("Read assets...");
+            Logger.Info("正在读取资源...");
 
             var progressCount = assetsFileList.Sum(x => x.m_Objects.Count);
             int i = 0;
@@ -502,7 +502,7 @@ namespace AssetStudio
 
         private void ProcessAssets()
         {
-            Logger.Info("Process Assets...");
+            Logger.Info("处理资源...");
 
             foreach (var assetsFile in assetsFileList)
             {

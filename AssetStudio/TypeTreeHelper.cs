@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.IO;
@@ -20,7 +20,7 @@ namespace AssetStudio
             var readed = reader.Position - reader.byteStart;
             if (readed != reader.byteSize)
             {
-                Logger.Info($"Error while read type, read {readed} bytes but expected {reader.byteSize} bytes");
+                Logger.Info($"读取类型时出错，读取了 {readed} 字节，但预期 {reader.byteSize} 字节");
             }
             return sb.ToString();
         }
@@ -177,7 +177,7 @@ namespace AssetStudio
             var readed = reader.Position - reader.byteStart;
             if (readed != reader.byteSize)
             {
-                Logger.Info($"Error while read type, read {readed} bytes but expected {reader.byteSize} bytes");
+                Logger.Info($"读取类型时出错，读取了 {readed} 字节，但预期读取 {reader.byteSize} 字节");
             }
             return obj;
         }
